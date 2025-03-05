@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+:root {
+  /* COLORS PRIMARY */
+
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+
+  /* NEUTRALES */
+
+  --Very-dark-blue-body: hsl(217, 54%, 11%);
+  --Very-dark-blue-main: hsl(216, 50%, 16%);
+  --Very-dark-blue-card: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+
+  --fm-1: "Outfit";
+  --fm-2: "Hanken Grotesk";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--fm-1);
+}
+
+body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--Very-dark-blue-body);
+}
+
+.container {
+  max-width: 350px;
+  margin: 0 auto;
+  padding: 25px;
+  border-radius: 15px;
+  background-color: var(--Very-dark-blue-main);
+  margin-top: 7rem;
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 0 auto;
+    border-radius: 15px;
+  }
+
+  .card__image {
+    width: 100%;
+    margin-top: 1rem;
+    position: relative;
+
+    img {
+      max-width: 100%;
+      height: auto;
+      max-height: 300px;
+      border-radius: 10px;
+    }
+
+    .card__image--overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 255, 247, 0.5);
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+
+      &:hover {
+        opacity: 1;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .card__title {
+    color: var(--White);
+    font-weight: 600;
+    &:hover {
+      color: var(--Cyan);
+      cursor: pointer;
+    }
+  }
+
+  .card__description {
+    color: var(--Soft-blue);
+    font-weight: 300;
+    font-size: 0.9rem;
+    line-height: 25px;
+  }
+
+  .card__info--container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .card__info--contai {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      .card__info--text {
+        font-size: 1rem;
+        &.price {
+          color: var(--Cyan);
+        }
+        &.time {
+          color: var(--Soft-blue);
+        }
+      }
+    }
+  }
+
+  hr {
+    border: 1px solid var(--Very-dark-blue-card);
+    height: 1px;
+  }
+
+  .card__profile {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+
+    .card__img {
+      width: 35px;
+      height: 35px;
+      border: 1px solid var(--White);
+      border-radius: 50%;
+    }
+
+    .card__profile--author {
+      color: var(--Soft-blue);
+      font-weight: 300;
+    }
+    .card__profile--name {
+      color: var(--White);
+      font-weight: 400;
+      &:hover {
+        color: var(--Cyan);
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+footer {
+  background-color: #333;
+  width: 100%;
+  margin-top: 20px;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-top: 2px solid #555;
+
+  p {
+    margin: 10px 0;
+  }
+
+  a {
+    color: #1e90ff;
+    text-decoration: none;
+    font-weight: bold;
+    &:hover {
+      color: #ff6347;
+      text-decoration: underline;
+    }
+  }
+}
+
+.language-switcher {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+}
+
+.language-switcher button {
+  padding: 10px 16px;
+  border: 2px solid var(--Very-dark-blue-body);
+  background: var(--White);
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  color: var(--Purple-500);
+  transition: all 0.3s ease;
+}
+
+.language-switcher button:hover {
+  background: var(--Very-dark-blue-card);
+  color: var(--White);
+}
+
+@media (min-width: 800px) {
+  .container {
+    background-color: hsl(216, 55%, 10%);
+    border-radius: 30px;
+
+    .card {
+      padding: 25px;
+      background-color: var(--Very-dark-blue-main);
+      margin-top: -50px;
+    }
+  }
+
+  footer {
+    width: 40%;
+    margin-top: 3rem;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+  }
+}

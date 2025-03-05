@@ -1,0 +1,19 @@
+[
+  {
+    "Name": "Equilibrium #3429",
+    "Description": "Our Equilibrium colleticon promotes balance and calm.",
+    "Price": {
+      "LogotypeETH": "images/icon-ethereum.svg",
+      "Amount": "0.041",
+      "Currency": "ETH"
+    },
+    "LogoTime": {
+      "Logotype": "images/icon-clock.svg",
+      "TimeRemaining": "3 days left"
+    },
+    "Creator": {
+      "Name": "Jules Wyvern",
+      "ProfileImage": "images/image-avatar.png"
+    }
+  }
+]

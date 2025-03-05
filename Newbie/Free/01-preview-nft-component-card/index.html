@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NFT Preview Component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <article class="card">
+        <div class="card__image">
+          <div class="card__image--overlay">
+            <img src="images/icon-view.svg" alt="icon view" />
+          </div>
+          <img src="images/image-equilibrium.jpg" alt="NFT: Equilibrium" />
+        </div>
+        <h1 class="card__title"></h1>
+        <p class="card__description"></p>
+        <div class="card__info--container">
+          <div class="card__info--contai price">
+            <p class="card__info--text price"></p>
+          </div>
+          <div class="card__info--contai time">
+            <p class="card__info--text time"></p>
+          </div>
+        </div>
+        <hr />
+        <div class="card__profile">
+          <p class="card__profile--author">Creation of</p>
+          <span class="card__profile--name"></span>
+        </div>
+      </article>
+    </section>
+    <footer>
+      <p class="text-links">
+        Challenge by
+        <a href="https://www.frontendmentor.io/profile/ImBenja"
+          >Frontend Mentor</a
+        >. Profile of <a href="https://github.com/ImBenja">Github</a>.
+      </p>
+      <p class="text-saludo">
+        ¡Gracias por visitar mi proyecto! ¡Sigue aprendiendo y creando!🚀
+      </p>
+    </footer>
+    <div class="language-switcher">
+      <button onclick="toggleLanguage()" id="langBtn">ES</button>
+    </div>
+    <!-- index.html -->
+    <script src="assets/js/main.js" type="module"></script>
+  </body>
+</html>
