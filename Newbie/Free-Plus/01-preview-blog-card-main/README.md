@@ -54,7 +54,7 @@
 
 - El proyecto está alojado en Netlify, una plataforma moderna para aplicaciones web estáticas y dinámicas.
 
-- Enlace: Ver en Netlify
+- [Enlace: Ver](https://component-blog-preview.netlify.app/)
 
 ## 🚀 Instalación
 
@@ -92,7 +92,7 @@ El componente funciona de la siguiente manera:
 
 ## 🔗 Demo en vivo
 
-Puedes ver una demostración en vivo del proyecto **<a href="">Aqui</a>**
+Puedes ver una demostración en vivo del proyecto **<a href="https://component-blog-preview.netlify.app/">Aqui</a>**
 
 <table border="1">
   <tr>

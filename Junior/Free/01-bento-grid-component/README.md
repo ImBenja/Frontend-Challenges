@@ -1,10 +1,10 @@
-# Results NFT preview card component
+# Results Bento grid Component
 
-![Design preview for the NFT preview card component coding challenge](./design/results/Desktop-Result.png)
+![Design preview for the Bento grid coding challenge](./design/results/Desktop-Result.png)
 
 # 📝 Descripción
 
-> Este proyecto es un componente de un NFT que muestra información sobre su precio, su creador y el tiempo restante, de manera interactiva y visualmente atractiva. Está diseñado para ser completamente responsive, con diseños adaptados tanto para móviles como para escritorio. Además, utiliza un diseño CSS flexbox moderno y eficiente para su visualización.
+> Este proyecto es un componente de rejilla Bento que muestra información sobre plataformas visitadas por los usuarios, estadísticas de socialidad y más, de manera interactiva y visualmente atractiva. Está diseñado para ser completamente responsive, con diseños adaptados tanto para móviles como para escritorio. Además, utiliza un diseño CSS Grid moderno y eficiente para su visualización.
 
 ## ✨ Características principales
 
@@ -12,9 +12,7 @@
 
 - **Cambio de idioma:** Incluye un botón para cambiar entre español e inglés.
 
-- **Carga Dinamica del Contenido:** Incluye tres archivos .JSON para la carga de los datos del NFT y la carga de los idiomas
-
-- **Diseño Flexbox:** Optimizado para una visualización perfecta en desktop y mobile.
+- **Diseño Grid:** Optimizado para una visualización perfecta en desktop.
 
 - **Visualización de resultados:** Fondos con colores modernos y atractivos.
 
@@ -24,13 +22,11 @@
 
 - **_HTML:_** Estructura semántica del componente.
 
-- **_CSS:_** Estilos avanzados con Flexbox.
+- **_CSS:_** Estilos avanzados con Flexbox y Grid.
 
-- **JavaScript:** Funcionalidad de cambio de idioma y carda Dinamica del contenido.
+- **JavaScript:** Funcionalidad de cambio de idioma.
 
-- **JSON:** Almacenamiento de los datos del NFT y los idiomas.
-
-- **_Google Fonts:_** Fuente _Outfit_ para un diseño moderno.
+- **_Google Fonts:_** Fuente Hanken y DM Sans para un diseño moderno.
 
 ## 🚀 Despliegue
 
@@ -40,7 +36,7 @@
 
 - El proyecto está alojado en Netlify, una plataforma moderna para aplicaciones web estáticas y dinámicas.
 
-- [Enlace: Ver](https://component-nft-card.netlify.app/)
+- [Enlace: Ver](https://component-bento-grid.netlify.app/)
 
 ## 🌐 Cambio de idioma
 
@@ -71,7 +67,7 @@ Sigue estos sencillos pasos para ejecutar el proyecto en tu entorno local:
 2. **Navega al directorio del proyecto**:
 
    ```bash
-   cd Proyects-Mentor/Newbie/Free/01-preview-nft-component-card
+   cd Proyects-Mentor/Junior/Free/01-bento-grid-component
 
    ```
 
@@ -82,9 +78,9 @@ Sigue estos sencillos pasos para ejecutar el proyecto en tu entorno local:
 
 El componente funciona de la siguiente manera:
 
-1. Carga automáticamente el contenido dinamicamente.
+1. Carga automáticamente las imagenes sin problemas de carga.
 
-2. Muestra la informacion del NFT en una tarjeta.
+2. Muestra la informacion y un desglose por categorías en diseño Grid.
 
 3. Se adapta automáticamente a diferentes tamaños de pantalla.
 
@@ -92,7 +88,9 @@ El componente funciona de la siguiente manera:
 
 ## 🔗 Demo en vivo
 
-Puedes ver una demostración en vivo del proyecto **<a href="https://component-nft-card.netlify.app/">Aqui</a>**
+Puedes ver una demostración en vivo del proyecto **<a href="https://component-bento-grid.netlify.app/">Aqui</a>**
+
+## 📸 Results
 
 <table border="1">
   <tr>
@@ -102,7 +100,7 @@ Puedes ver una demostración en vivo del proyecto **<a href="https://component-n
   </tr>
   <tr>
     <td>
-      <img align="center" src="design/results/Mobile-Result.png" width="400px">
+      <img align="center" src="design/results/Mobile-Result.png" width="400px" style="border-radius: 20px">
     </td>
   </tr>
   <tr>
@@ -112,7 +110,7 @@ Puedes ver una demostración en vivo del proyecto **<a href="https://component-n
   </tr>
   <tr>
      <td>
-      <img src="design/results/Desktop-Result.png" width="1000px">
+      <img src="design/results/Desktop-Result.png" width="1000px" style="border-radius: 20px">
     </td>
   </tr>
 </table>

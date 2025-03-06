@@ -1,8 +1,10 @@
 # Results Summary Component
 
+![Design preview for the NFT preview card component coding challenge](./design/results/Desktop-Result.png)
+
 ## 📝 Descripción
 
-Este proyecto es un componente de resumen de resultados que muestra puntuaciones de pruebas de manera interactiva y visualmente atractiva. Está diseñado para ser completamente responsive, con diseños adaptados tanto para móviles como para escritorio. Los datos se cargan dinámicamente desde un archivo JSON.
+> Este proyecto es un componente de resumen de resultados que muestra puntuaciones de pruebas de manera interactiva y visualmente atractiva. Está diseñado para ser completamente responsive, con diseños adaptados tanto para móviles como para escritorio. Los datos se cargan dinámicamente desde un archivo JSON.
 
 ## ✨ Características principales
 
@@ -26,6 +28,16 @@ Este proyecto es un componente de resumen de resultados que muestra puntuaciones
 
 - **_Google Fonts:_** Fuente Hanken Grotesk para un diseño moderno.
 
+## 🚀 Despliegue
+
+> Este proyecto está desplegado en dos plataformas diferentes para que puedas acceder a él de manera fácil y rápida:
+
+### 1. Netlify:
+
+- El proyecto está alojado en Netlify, una plataforma moderna para aplicaciones web estáticas y dinámicas.
+
+- [Enlace: Ver](https://component-results-summary.netlify.app/)
+
 ## 🚀 Instalación
 
 Sigue estos sencillos pasos para ejecutar el proyecto en tu entorno local:
@@ -33,15 +45,15 @@ Sigue estos sencillos pasos para ejecutar el proyecto en tu entorno local:
 1. **Clona este repositorio**:
    Abre tu terminal y ejecuta el siguiente comando:
 
-   ```bash
-   git clone https://github.com/ImBenja/results-summary-component.git
+```bash
+git clone git@github.com:tu_username/Proyects-Mentor.git
 
-   ```
+```
 
 2. **Navega al directorio del proyecto**:
 
    ```bash
-   cd results-summary-component
+   cd Proyects-Mentor/Newbie/Free/02-results-summary-component
 
    ```
 
@@ -60,7 +72,7 @@ El componente funciona de la siguiente manera:
 
 ## 🔗 Demo en vivo
 
-Puedes ver una demostración en vivo del proyecto **<a href="https://imbenja.github.io/Resumen-De-Resultados.github.io/">Aqui</a>**
+Puedes ver una demostración en vivo del proyecto **<a href="https://component-results-summary.netlify.app/">Aqui</a>**
 
 ## 📸 Results
 

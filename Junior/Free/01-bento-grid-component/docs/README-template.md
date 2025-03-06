@@ -44,8 +44,8 @@ Los usuarios deben poder:
 
 ### Links
 
-- Solution URL: [**Solucion**](https://github.com/ImBenja/Bento-Grid-Component)
-- Live Site URL: [**Sitio en Vivo**](https://imbenja.github.io/Resumen-De-Resultados.github.io/)
+- Solution URL: [**Solucion**](https://github.com/ImBenja/Frontend-Challenges/tree/main/Junior/Free/01-bento-grid-component)
+- Live Site URL: [**Sitio en Vivo**](https://component-bento-grid.netlify.app/)
 
 ## 🛠️ Mi proceso
 

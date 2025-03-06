@@ -14,12 +14,11 @@ Los diseños se crearon con los siguientes anchos de pantalla:
 
 # 🎨 Colores
 
-- **_Yellow: hsl(47, 88%, 63%)_**
+- **White: hsl(0, 0%, 100%)**
 
-- **_White: hsl(0, 0%, 100%)_**
-
-- **_Gray 500: hsl(0, 0%, 42%)_**
-- **_Gray 950: hsl(0, 0%, 7%)_**
+- **Slate 300: hsl(212, 45%, 89%)**
+- **Slate 500: hsl(216, 15%, 48%)**
+- **Slate 900: hsl(218, 44%, 22%)**
 
 ### Notas sobre Colores
 
@@ -33,9 +32,9 @@ Los diseños se crearon con los siguientes anchos de pantalla:
 
 ### Fuente
 
-- _Family: [Figtree](https://fonts.google.com/specimen/Figtree)_
+- _Family: [Outfit](https://fonts.google.com/specimen/Outfit)_
 
-- _\_WEIGHTS: 500, 800_
+- _\_WEIGHTS: 400, 700_
 
 # 💡 Consejos Adicionales
 

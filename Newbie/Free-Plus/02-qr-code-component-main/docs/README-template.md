@@ -1,6 +1,6 @@
-# Frontend Mentor - Blog Preview Card Component solution
+# Frontend Mentor - QR code component solution
 
-> Esta es mi solución al desafío Blog Preview Card Component de Frontend Mentor. Los desafíos de Frontend Mentor te ayudan a mejorar tus habilidades de codificación mediante la construcción de proyectos realistas.
+> Esta es mi solución al desafío QR Code Component de Frontend Mentor. Los desafíos de Frontend Mentor te ayudan a mejorar tus habilidades de codificación mediante la construcción de proyectos realistas.
 
 ## 📚 Tabla de contenidos
 
@@ -24,7 +24,7 @@ Los usuarios deben poder:
 
 1. Ver el diseño óptimo según el tamaño de pantalla de su dispositivo.
 
-2. Ver los datos dinamicamente almacenados en el archivo data.json
+2. Alternar el idioma del sitio de forma dinámica.
 
 3. Ver los diseños de Flexbox y los efectos de hover.
 
@@ -40,12 +40,12 @@ Los usuarios deben poder:
 
 ![](../design/results/Mobile-Result.png)
 
-**Descripción**: Esta son las captura de pantalla de mi solución al desafío **Blog Preview Card Component**. Muestra la vista de escritorio del componente, con un diseño limpio. Muestra la vista de mobile del componente, con un diseño responsive en todos los dispositivos.
+**Descripción**: Esta son las captura de pantalla de mi solución al desafío **Blog Preview Card Component**. Muestra la vista de escritorio del componente, con un diseño limpio. Muestra la vista de mobile del componente, con un diseño responsive en todos los dispositivos
 
 ### Links
 
-- Solution URL: [**Solucion**](https://github.com/ImBenja/Frontend-Challenges/tree/main/Newbie/Free-Plus/01-preview-blog-card-main)
-- Live Site URL: [**Sitio en Vivo**](https://challengebentogrid.netlify.app/)
+- Solution URL: [**Solucion**](https://github.com/ImBenja/Frontend-Challenges/tree/main/Newbie/Free-Plus/02-qr-code-component-main)
+- Live Site URL: [**Sitio en Vivo**](https://component-qr-preview.netlify.app/)
 
 ## 🛠️ Mi proceso
 
@@ -56,33 +56,19 @@ Los usuarios deben poder:
 - **_CSS:_** Estilos avanzados con Flexbox y hovers interactivos.
 
 - **_JavaScript:_** Uso de Fetch API para cargar los idiomas y evento de click para cambiar el idioma a Ingles o Español.
-  Ademas cargamos los datos dinamicamente.
 
-- **_Google Fonts:_** Fuente Figtree para un diseño moderno.
+- **_Google Fonts:_** Fuente Outfit para un diseño moderno.
 
 ## Lo que Aprendi
 
 1. _Diseño responsive: Usé media queries y un enfoque mobile-first para adaptar el diseño a diferentes dispositivos._
 
-2. _Manipulación del DOM: Aprendí a cargar datos dinámicos desde dos archivo JSON._
+2. _Manipulación del DOM: Aprendí a cargar datos dinámicos desde dos archivo JSON para alternar entre ingles o español._
 
-3. _Cambio de idioma: aprendi a altenar el idioma al hacer click en un boton._
-
-```html
-<article class="card__content">
-  <span class="card__content--category"></span>
-  <p class="card__content--published"></p>
-  <h1 class="card__content--title"></h1>
-  <p class="card__content--description"></p>
-  <div class="card__content--author">
-    <p class="card__content--author-name"></p>
-  </div>
-</article>
-```
+3. _Uso de IMPORTS:\_ Uso de la palabra reservada IMPORT para importar los datos de los archivos JSON._
 
 ```js
 // main.js
-import { loadData } from "./components/data.js";
 import {
   loadTranslations,
   toggleLanguage,
@@ -90,56 +76,12 @@ import {
 } from "./components/languaje.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-  loadData();
   loadTranslations();
 
   // Botón de cambio de idioma
   const langBtn = document.getElementById("langBtn");
   langBtn.addEventListener("click", toggleLanguage);
 });
-```
-
-```js
-// data.js
-import {
-  category,
-  publication,
-  title,
-  description,
-  containerAuthor,
-  nameAuthor,
-} from "../util/const.js";
-
-export function loadData() {
-  fetch("assets/locales/data.json")
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error(`HTTP error! Status: ${response.status}`);
-      }
-      return response.json();
-    })
-    .then((data) => {
-      if (Array.isArray(data) && data.length > 0) {
-        const { Name, ProfileImage } = data[0].Creator;
-
-        category.textContent = data[0].Category;
-        publication.textContent = data[0].PublicationDate;
-        title.textContent = data[0].Title;
-        description.textContent = data[0].Description;
-        nameAuthor.textContent = Name;
-
-        const img = document.createElement("img");
-        img.src = ProfileImage;
-        img.alt = Name;
-        img.classList.add("card__content--author--image");
-
-        containerAuthor.insertBefore(img, nameAuthor);
-      } else {
-        console.error("El archivo JSON no contiene datos válidos.");
-      }
-    })
-    .catch((error) => console.error("Error al cargar el JSON:", error));
-}
 ```
 
 ```js
