@@ -3,7 +3,7 @@
     <img src="IMG.png" /> 
     </a>
   <h3>
-    <h1>Proyectos de Frontend Mentor </h1>
+    <h1>Proyectos de Front-end </h1>
   </h3>
 </div>
 
