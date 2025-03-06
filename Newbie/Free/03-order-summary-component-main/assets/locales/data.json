@@ -1,0 +1,11 @@
+{
+  "orderSummary": {
+    "title": "Order Summary",
+    "description": "You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!",
+    "annualPlan": {
+      "title": "Annual Plan",
+      "price": "$59.99/year",
+      "link": "Change"
+    }
+  }
+}

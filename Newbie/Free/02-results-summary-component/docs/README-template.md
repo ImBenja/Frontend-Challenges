@@ -42,8 +42,8 @@ Los usuarios deben poder:
 
 ### Links
 
-- Solution URL: [**Solucion**](https://github.com/ImBenja/Resumen-De-Resultados)
-- Live Site URL: [**Sitio en Vivo**](https://github.com/ImBenja/Frontend-Challenges/tree/main/Newbie/Free/02-results-summary-component)
+- Solution URL: [**Solucion**](https://github.com/ImBenja/Frontend-Challenges/tree/main/Newbie/Free/02-results-summary-component)
+- Live Site URL: [**Sitio en Vivo**](https://component-results-summary.netlify.app/)
 
 ## 🛠️ Mi proceso
 

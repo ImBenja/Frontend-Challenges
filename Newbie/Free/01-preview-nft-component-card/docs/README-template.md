@@ -16,8 +16,6 @@
 - [Autor](#author)
 - [Agradecimientos](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 # 📖 Descripción general
 
 ### El desafío
@@ -46,8 +44,8 @@ Los usuarios deben poder:
 
 ### Links
 
-- Solution URL: [**Solucion**](https://github.com/ImBenja/NFT-Preview-Component)
-- Live Site URL: [**Sitio en Vivo**](https://github.com/ImBenja/Frontend-Challenges/tree/main/Newbie/Free/01-preview-nft-component-card)
+- Solution URL: [**Solucion**](https://github.com/ImBenja/Frontend-Challenges/tree/main/Newbie/Free/01-preview-nft-component-card)
+- Live Site URL: [**Sitio en Vivo**](https://component-nft-card.netlify.app/)
 
 ## 🛠️ Mi proceso
 

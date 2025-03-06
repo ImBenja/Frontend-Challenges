@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Figtree:ital,wght@0,300..900;1,300..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+  /* ------------------------------COLORES-------------------------*/
+
+  /* PRIMARIOS */
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+
+  /* NEUTRALES */
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+
+  /* ------------------------------FUENTES-------------------------*/
+
+  --font-family: "Red Hat Display";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+body {
+  background-color: var(--Pale-blue);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.payment-success {
+  position: absolute;
+  bottom: 0;
+  background-color: white;
+  padding: 1.5rem;
+  max-width: 650px;
+  text-align: center;
+  border-radius: 10px;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease, transform 0.5s ease;
+  transform: translateY(0);
+
+  p {
+    color: var(--Dark-blue);
+    font-size: 1rem;
+    font-weight: 900;
+  }
+}
+
+.payment-success--show {
+  opacity: 1; /* Hacer visible */
+  visibility: visible; /* Mostrar */
+  transform: translateY(-20px);
+}
+
+.container {
+  background-color: white;
+  width: 380px;
+  border-radius: 20px;
+  transition: all 0.5s ease;
+  margin-top: 7rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  .card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+    .card__image {
+      width: 100%;
+      position: relative;
+      display: flex;
+      align-items: start;
+
+      img {
+        max-width: 100%;
+        height: auto;
+        max-height: 300px;
+        border-radius: 20px 20px 0 0;
+      }
+    }
+
+    .card__content {
+      display: flex;
+      text-align: center;
+      gap: 1rem;
+      flex-direction: column;
+      padding: 2rem;
+      .card__title {
+        font-size: 1.7rem;
+        font-weight: 900;
+        color: var(--Dark-blue);
+      }
+      .card__description {
+        font-size: 1.1rem;
+        font-weight: 500;
+        line-height: 1.7rem;
+        color: var(--Desaturated-blue);
+      }
+
+      .card__plan {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--Very-pale-blue);
+        padding: 1rem;
+        border-radius: 10px;
+        gap: 1rem;
+
+        .card__plan--icon {
+          width: 50px;
+          height: 50px;
+          img {
+            max-width: 100%;
+            height: auto;
+          }
+        }
+
+        .card__plan--info {
+          display: flex;
+          flex-direction: column;
+          gap: 0.3rem;
+
+          .card__plan--title {
+            font-size: 1rem;
+            font-weight: 900;
+            color: var(--Dark-blue);
+          }
+
+          .card__plan--price {
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--Desaturated-blue);
+          }
+        }
+
+        .card__plan--change {
+          a {
+            font-size: 1rem;
+            font-weight: 900;
+            color: var(--Bright-blue);
+            text-decoration: underline;
+            &:hover {
+              text-decoration: none;
+              color: var(--Desaturated-blue);
+            }
+          }
+        }
+      }
+
+      .card__button {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        .card__button--payment {
+          background-color: var(--Bright-blue);
+          color: white;
+          font-size: 1rem;
+          font-weight: 700;
+          padding: 1rem;
+          border-radius: 10px;
+          border: none;
+          cursor: pointer;
+          transition: all 0.5s ease;
+          &:hover {
+            background-color: var(--Desaturated-blue);
+          }
+        }
+
+        .card__button--cancel {
+          background-color: transparent;
+          color: var(--Desaturated-blue);
+          font-size: 1rem;
+          font-weight: 900;
+          padding: 1rem;
+          border-radius: 10px;
+          border: none;
+          cursor: pointer;
+          transition: all 0.5s ease;
+          &:hover {
+            color: var(--Dark-blue);
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background-color: #333;
+  width: 100%;
+  margin-top: 20px;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-top: 2px solid #555;
+
+  p {
+    margin: 10px 0;
+  }
+
+  a {
+    color: #1e90ff;
+    text-decoration: none;
+    font-weight: bold;
+    &:hover {
+      color: #ff6347;
+      text-decoration: underline;
+    }
+  }
+}
+
+.language-switcher {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+}
+
+.language-switcher button {
+  padding: 10px 16px;
+  border: 2px solid var(--Dark-blue);
+  background: var(--Bright-blue);
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.language-switcher button:hover {
+  background: var(--Very-pale-blue);
+  color: var(--White);
+}
+
+@media (min-width: 800px) {
+  .payment-success {
+    max-width: 500px;
+    position: fixed;
+    right: 0;
+    bottom: 20px; /* Ajusta según sea necesario */
+    transform: translateX(100%); /* Inicialmente fuera de la pantalla */
+    transition: transform 0.3s ease-out; /* Transición rápida pero controlada */
+  }
+
+  .payment-success--show {
+    transform: translateX(0); /* Mover a la posición final */
+  }
+
+  footer {
+    width: 40%;
+    margin-top: 3rem;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+  }
+}

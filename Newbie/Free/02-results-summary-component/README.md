@@ -46,14 +46,14 @@ Sigue estos sencillos pasos para ejecutar el proyecto en tu entorno local:
    Abre tu terminal y ejecuta el siguiente comando:
 
 ```bash
-git clone git@github.com:tu_username/Proyects-Mentor.git
+git clone  https://github.com/ImBenja/Frontend-Challenges.git
 
 ```
 
 2. **Navega al directorio del proyecto**:
 
    ```bash
-   cd Proyects-Mentor/Newbie/Free/02-results-summary-component
+   cd Frontend-Challenges/Newbie/Free/02-results-summary-component
 
    ```
 

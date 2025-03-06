@@ -2,8 +2,6 @@ let currentLang = "en";
 let translations = {};
 
 async function loadTranslations() {
-  console.log("Intentando cargar:", window.location.origin + "/en.json");
-  console.log("Intentando cargar:", window.location.origin + "/es.json");
   try {
     const [enResponse, esResponse] = await Promise.all([
       fetch("assets/locales/en.json"),

@@ -1,10 +1,11 @@
-# Results NFT preview card component
+# Results Order summary card
 
-![Design preview for the NFT preview card component coding challenge](./design/results/Desktop-Result.png)
+![Design preview for the Order summary card coding challenge](design/results/Desktop-Results.png)
+![Design preview for the Order summary card coding challenge](design/results/Activate-Results.png)
 
 # 📝 Descripción
 
-> Este proyecto es un componente de un NFT que muestra información sobre su precio, su creador y el tiempo restante, de manera interactiva y visualmente atractiva. Está diseñado para ser completamente responsive, con diseños adaptados tanto para móviles como para escritorio. Además, utiliza un diseño CSS flexbox moderno y eficiente para su visualización.
+> Este proyecto es un componente de un pedido que muestra información sobre su precio anual, su tipo de contenido y un boton para procesar el pago, de manera interactiva y visualmente atractiva. Está diseñado para ser completamente responsive, con diseños adaptados tanto para móviles como para escritorio. Además, utiliza un diseño CSS flexbox moderno y eficiente para su visualización.
 
 ## ✨ Características principales
 
@@ -12,13 +13,15 @@
 
 - **Cambio de idioma:** Incluye un botón para cambiar entre español e inglés.
 
-- **Carga Dinamica del Contenido:** Incluye tres archivos .JSON para la carga de los datos del NFT y la carga de los idiomas
+- **Carga Dinamica del Contenido:** Incluye tres archivos .JSON para la carga de los datos del pedido y la carga de los idiomas
 
 - **Diseño Flexbox:** Optimizado para una visualización perfecta en desktop y mobile.
 
 - **Visualización de resultados:** Fondos con colores modernos y atractivos.
 
-- **Desglose por categorías:** Muestra resultados detallados por cada categoría.
+- **Desglose por categorías:** Muestra el pedido detallado por cada categoría.
+
+- **Manipulacion del DOM:** Se utiliza para manipular el DOM y cambiar el contenido de los elementos HTML.
 
 ## 🛠️ Tecnologías utilizadas
 
@@ -26,11 +29,11 @@
 
 - **_CSS:_** Estilos avanzados con Flexbox.
 
-- **JavaScript:** Funcionalidad de cambio de idioma y carda Dinamica del contenido.
+- **JavaScript:** Funcionalidad de cambio de idioma, manipulacion del DOM y la carga dinamica del contenido.
 
-- **JSON:** Almacenamiento de los datos del NFT y los idiomas.
+- **JSON:** Almacenamiento de los datos del pedido y los idiomas.
 
-- **_Google Fonts:_** Fuente _Outfit_ para un diseño moderno.
+- **_Google Fonts:_** Fuente _Red Hat Display_ para un diseño moderno.
 
 ## 🚀 Despliegue
 
@@ -40,7 +43,7 @@
 
 - El proyecto está alojado en Netlify, una plataforma moderna para aplicaciones web estáticas y dinámicas.
 
-- [Enlace: Ver](https://component-nft-card.netlify.app/)
+- Ver en Vivo: [Aqui](https://component-order-summaryt.netlify.app/)
 
 ## 🌐 Cambio de idioma
 
@@ -54,11 +57,7 @@
 
 > Al hacer clic en el botón de cambio de idioma, el contenido del componente se actualiza automáticamente.
 
-> Los textos se cargan desde los archivos JSON correspondientes (es.json para español y en.json para inglés).
-
-## 🚀 Instalación
-
-Sigue estos sencillos pasos para ejecutar el proyecto en tu entorno local:
+> Los textos se cargan desde los archivos JSON correspondientes (es.json para español y en.json para inglés)
 
 1. **Clona este repositorio**:
    Abre tu terminal y ejecuta el siguiente comando:
@@ -71,7 +70,7 @@ Sigue estos sencillos pasos para ejecutar el proyecto en tu entorno local:
 2. **Navega al directorio del proyecto**:
 
    ```bash
-   cd Frontend-Challenges/Newbie/Free/01-preview-nft-component-card
+   cd Frontend-Challenges/Newbie/Free/03-order-summary-component-card
 
    ```
 
@@ -84,11 +83,13 @@ El componente funciona de la siguiente manera:
 
 1. Carga automáticamente el contenido dinamicamente.
 
-2. Muestra la informacion del NFT en una tarjeta.
+2. Muestra la informacion del pedido en una tarjeta.
 
 3. Se adapta automáticamente a diferentes tamaños de pantalla.
 
 4. Presiona el botón de cambio de idioma para alternar entre español e inglés. Los textos se cargan dinámicamente desde los archivos _es.json_ y _en.json_.
+
+5. Presiona el botón de Procesar Pago para finalizar el pedido.
 
 ## 🔗 Demo en vivo
 
@@ -112,7 +113,7 @@ Puedes ver una demostración en vivo del proyecto **<a href="https://component-n
   </tr>
   <tr>
      <td>
-      <img src="design/results/Desktop-Result.png" width="1000px">
+      <img src="design/results/Desktop-Results.png" width="1000px">
     </td>
   </tr>
 </table>

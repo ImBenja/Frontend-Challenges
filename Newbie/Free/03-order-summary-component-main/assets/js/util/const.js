@@ -1,0 +1,9 @@
+export const title = document.querySelector(".card__title");
+export const description = document.querySelector(".card__description");
+export const titlePlan = document.querySelector(".card__plan--title");
+export const pricePlan = document.querySelector(".card__plan--price");
+export const linkPlan = document.querySelector(".card__plan--link");
+export const paymentSuccess = document.querySelector(".payment-success__text");
+export const paymentThanks = document.querySelector(".payment-thanks__text");
+export const btnPayment = document.querySelector(".card__button--payment");
+export const btnClose = document.querySelector(".card__button--cancel");

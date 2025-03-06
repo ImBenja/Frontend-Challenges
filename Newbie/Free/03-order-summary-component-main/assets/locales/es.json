@@ -1,0 +1,13 @@
+{
+  "title": "Resumen del pedido",
+  "description": "¡Ahora puedes escuchar millones de canciones, audiolibros y podcasts en cualquier dispositivo y en cualquier lugar que desees!",
+  "titlePlan": "Plan anual",
+  "pricePlan": "$59.99/año",
+  "linkPlan": "Cambiar",
+  "paymentThanks": "¡Gracias por tu compra!🙌",
+  "paymentSuccess": "Tu pedido ha sido procesado con éxito✅",
+  "btnPayment": "Proceder al Pago",
+  "btnClose": "Cancelar Pedido",
+  "footerLinks": "Desafio por <a href='https://www.frontendmentor.io/profile/ImBenja'>Frontend Mentor</a>. Perfil de <a href='https://github.com/ImBenja'>Github</a>.",
+  "footerSaludo": "¡Gracias por visitar mi proyecto! ¡Sigue aprendiendo y creando!🚀"
+}

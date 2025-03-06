@@ -1,10 +1,13 @@
 import {
-  nameNFT,
-  descriptionNFT,
-  priceNFT,
-  timeNFT,
-  infoAuthorNFT,
-  nameAuthorNFT,
+  title,
+  description,
+  titlePlan,
+  pricePlan,
+  linkPlan,
+  paymentThanks,
+  paymentSuccess,
+  btnPayment,
+  btnClose,
 } from "../util/const.js";
 
 // language.js
@@ -33,19 +36,24 @@ export function toggleLanguage() {
   currentLang = currentLang === "en" ? "es" : "en";
   const btn = document.getElementById("langBtn");
   btn.textContent = currentLang === "en" ? "ES" : "EN";
-  updateContent();
+  setTimeout(() => {
+    updateContent();
+  }, 500);
 }
 
 export function updateContent() {
   const t = translations[currentLang];
   if (!t) return;
 
-  nameNFT.textContent = t.title;
-  descriptionNFT.textContent = t.description;
-  priceNFT.textContent = t.price;
-  timeNFT.textContent = t.time;
-  infoAuthorNFT.textContent = t.infoAuthor;
-  nameAuthorNFT.textContent = t.nameAuthor;
+  title.textContent = t.title;
+  description.textContent = t.description;
+  titlePlan.textContent = t.titlePlan;
+  pricePlan.textContent = t.pricePlan;
+  linkPlan.textContent = t.linkPlan;
+  paymentThanks.textContent = t.paymentThanks;
+  paymentSuccess.textContent = t.paymentSuccess;
+  btnPayment.textContent = t.btnPayment;
+  btnClose.textContent = t.btnClose;
   document.querySelector(".text-links").innerHTML = t.footerLinks;
   document.querySelector(".text-saludo").innerHTML = t.footerSaludo;
 }
