@@ -1,5 +1,5 @@
 <div align="center">
-    <a href="https://www.javascript100.dev">
+    <a href="">
     <img src="IMG.png" /> 
     </a>
   <h3>
