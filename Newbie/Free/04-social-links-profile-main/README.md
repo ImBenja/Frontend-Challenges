@@ -1,10 +1,10 @@
-# Results Bento grid Component
+# Results Social Links Profile
 
-![Design preview for the Bento grid coding challenge](./design/results/Desktop-Result.png)
+![Design preview for the Order summary card coding challenge](design/results/Desktop-Result.png)
 
 # 📝 Descripción
 
-> Este proyecto es un componente de rejilla Bento que muestra información sobre plataformas visitadas por los usuarios, estadísticas de socialidad y más, de manera interactiva y visualmente atractiva. Está diseñado para ser completamente responsive, con diseños adaptados tanto para móviles como para escritorio. Además, utiliza un diseño CSS Grid moderno y eficiente para su visualización.
+> Este proyecto es un componente social que muestra información sobre redes sociales de la persona y links para acceder a sus redes, un boton para cada link de manera interactiva y visualmente atractiva. Está diseñado para ser completamente responsive, con diseños adaptados tanto para móviles como para escritorio. Además, utiliza un diseño CSS flexbox moderno y eficiente para su visualización.
 
 ## ✨ Características principales
 
@@ -12,21 +12,27 @@
 
 - **Cambio de idioma:** Incluye un botón para cambiar entre español e inglés.
 
-- **Diseño Grid:** Optimizado para una visualización perfecta en desktop.
+- **Carga Dinamica del Contenido:** Incluye tres archivos .JSON para la carga de los datos de las redes y la persona y la carga de los idiomas
+
+- **Diseño Flexbox:** Optimizado para una visualización perfecta en desktop y mobile.
 
 - **Visualización de resultados:** Fondos con colores modernos y atractivos.
 
-- **Desglose por categorías:** Muestra resultados detallados por cada categoría.
+- **Desglose por categorías:** Muestra la tarjeta social por cada link.
+
+- **Manipulacion del DOM:** Se utiliza para manipular el DOM y cambiar el contenido de los elementos HTML.
 
 ## 🛠️ Tecnologías utilizadas
 
 - **_HTML:_** Estructura semántica del componente.
 
-- **_CSS:_** Estilos avanzados con Flexbox y Grid.
+- **_CSS:_** Estilos avanzados con Flexbox.
 
-- **JavaScript:** Funcionalidad de cambio de idioma.
+- **JavaScript:** Funcionalidad de cambio de idioma, manipulacion del DOM y la carga dinamica del contenido.
 
-- **_Google Fonts:_** Fuente Hanken y DM Sans para un diseño moderno.
+- **JSON:** Almacenamiento de los datos de las redes sociales y los idiomas.
+
+- **_Google Fonts:_** Fuente _Inter_ para un diseño moderno.
 
 ## 🚀 Despliegue
 
@@ -36,7 +42,7 @@
 
 - El proyecto está alojado en Netlify, una plataforma moderna para aplicaciones web estáticas y dinámicas.
 
-- [Enlace: Ver](https://component-bento-grid.netlify.app/)
+- Ver en Vivo: [Aqui](https://component-profile.netlify.app/)
 
 ## 🌐 Cambio de idioma
 
@@ -50,7 +56,7 @@
 
 > Al hacer clic en el botón de cambio de idioma, el contenido del componente se actualiza automáticamente.
 
-> Los textos se cargan desde los archivos JSON correspondientes (es.json para español y en.json para inglés).
+> Los textos se cargan desde los archivos JSON correspondientes (es.json para español y en.json para inglés)
 
 ## 🚀 Instalación
 
@@ -60,14 +66,14 @@ Sigue estos sencillos pasos para ejecutar el proyecto en tu entorno local:
    Abre tu terminal y ejecuta el siguiente comando:
 
    ```bash
-   git clone git@github.com:tu_username/Proyects-Mentor.git
+   git clone https://github.com/ImBenja/Frontend-Challenges.git
 
    ```
 
 2. **Navega al directorio del proyecto**:
 
    ```bash
-   cd Proyects-Mentor/Junior/Free/01-bento-grid-component
+   cd Frontend-Challenges/Newbie/Free/04-social-links-profile-main
 
    ```
 
@@ -78,9 +84,9 @@ Sigue estos sencillos pasos para ejecutar el proyecto en tu entorno local:
 
 El componente funciona de la siguiente manera:
 
-1. Carga automáticamente las imagenes sin problemas de carga.
+1. Carga automáticamente el contenido dinamicamente.
 
-2. Muestra la informacion y un desglose por categorías en diseño Grid.
+2. Muestra la informacion de las redes en una tarjeta.
 
 3. Se adapta automáticamente a diferentes tamaños de pantalla.
 
@@ -88,9 +94,7 @@ El componente funciona de la siguiente manera:
 
 ## 🔗 Demo en vivo
 
-Puedes ver una demostración en vivo del proyecto **<a href="https://component-bento-grid.netlify.app/">Aqui</a>**
-
-## 📸 Results
+Puedes ver una demostración en vivo del proyecto **<a href="https://component-profile.netlify.app/">Aqui</a>**
 
 <table border="1">
   <tr>
@@ -100,7 +104,7 @@ Puedes ver una demostración en vivo del proyecto **<a href="https://component-b
   </tr>
   <tr>
     <td>
-      <img align="center" src="design/results/Mobile-Result.png" width="400px" style="border-radius: 20px">
+      <img align="center" src="design/results/Mobile-Result.png" width="400px">
     </td>
   </tr>
   <tr>
@@ -110,7 +114,7 @@ Puedes ver una demostración en vivo del proyecto **<a href="https://component-b
   </tr>
   <tr>
      <td>
-      <img src="design/results/Desktop-Result.png" width="1000px" style="border-radius: 20px">
+      <img src="design/results/Desktop-Result.png" width="1000px">
     </td>
   </tr>
 </table>

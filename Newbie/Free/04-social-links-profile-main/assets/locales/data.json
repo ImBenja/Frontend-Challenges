@@ -1,0 +1,15 @@
+{
+  "profileCard": {
+    "profileImg": "images/avatar-benjamin.png",
+    "name": "Benjamin Juarez",
+    "location": "Buenos Aires, Argentina",
+    "profesion": "Web and Aplication Developer",
+    "contactSocial": {
+      "linkGithub": "GitHub",
+      "linkMentor": "Frontend Mentor",
+      "linkLinkedin": "Linkedin",
+      "linkX": "Twitter",
+      "linkIG": "Instagram"
+    }
+  }
+}

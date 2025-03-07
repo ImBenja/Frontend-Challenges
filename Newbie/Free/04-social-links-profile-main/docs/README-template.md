@@ -1,6 +1,6 @@
-# Frontend Mentor - Order Summary
+# Frontend Mentor - Social links profile solution
 
-> Esta es mi solución al desafío Order Summary Card Component de Frontend Mentor. Los desafíos de Frontend Mentor te ayudan a mejorar tus habilidades de codificación mediante la construcción de proyectos realistas.
+> Esta es mi solución al desafío Social Links Profile de Frontend Mentor. Los desafíos de Frontend Mentor te ayudan a mejorar tus habilidades de codificación mediante la construcción de proyectos realistas.
 
 ## 📚 Tabla de contenidos
 
@@ -28,26 +28,24 @@ Los usuarios deben poder:
 
 3. Ver los diseños de Flexbox y los efectos de hover.
 
-4. Ver el pedido realizado.
-
 > **Bonus:** Use datos de dos archivos .JSON para alternar un cambio de idiomas ya sea Español o Ingles.
 
 ### Screenshot
 
 #### Vista de escritorio
 
-![](../design/results/Desktop-Results.png)
+![](../design/results/Desktop-Result.png)
 
 #### Vista móvil
 
 ![](../design/results/Mobile-Result.png)
 
-**Descripción**: Esta son las captura de pantalla de mi solución al desafío **Order Summary Card Component**. Muestra la vista de escritorio del componente, con un diseño limpio. Muestra la vista de mobile del componente, con un diseño responsive en todos los dispositivos.
+**Descripción**: Esta son las captura de pantalla de mi solución al desafío **Social links profile**. Muestra la vista de escritorio del componente, con un diseño limpio. Muestra la vista de mobile del componente, con un diseño responsive en todos los dispositivos.
 
 ### Links
 
-- Solution URL: [**Solucion**](https://github.com/ImBenja/Frontend-Challenges/tree/main/Newbie/Free/03-order-summary-component-card)
-- Live Site URL: [**Sitio en Vivo**](https://component-order-summaryt.netlify.app/)
+- Solution URL: [**Solucion**](https://github.com/ImBenja/Frontend-Challenges/tree/main/Newbie/Free/04-social-links-profile-main)
+- Live Site URL: [**Sitio en Vivo**](https://component-profile.netlify.app/)
 
 ## 🛠️ Mi proceso
 
@@ -60,9 +58,7 @@ Los usuarios deben poder:
 - **_JavaScript:_** Uso de Fetch API para cargar los idiomas y evento de click para cambiar el idioma a Ingles o Español.
   Ademas cargamos los datos dinamicamente.
 
-- **_Google Fonts:_** Fuente Red Hat Display para un diseño moderno.
-
-- [**_Styled Components_**](https://styled-components.com/) - For styles
+- **_Google Fonts:_** Fuente Inter para un diseño moderno.
 
 ### Lo que Aprendi
 
@@ -75,10 +71,30 @@ Los usuarios deben poder:
 4. _Cambio de idioma: aprendi a altenar el idioma al hacer click en un boton._
 
 ```html
-<div class="payment-success">
-  <p class="payment-thanks__text">Thank you for your purchase! 🙌</p>
-  <p class="payment-success__text">Tu pedido ha sido procesado con éxito✅</p>
-</div>
+<figure class="card__image"></figure>
+<article class="card__content">
+  <div class="card__content--titles">
+    <h1 class="card__content--name"></h1>
+    <h2 class="card__content--location"></h2>
+  </div>
+  <h3 class="card__content--profesion"></h3>
+  <div class="card__content--links">
+    <a href="https://github.com/ImBenja" class="card__link github"></a>
+    <a
+      href="https://www.frontendmentor.io/profile/ImBenja"
+      class="card__link frontendmentor"
+    ></a>
+    <a
+      href="https://www.linkedin.com/in/benjam%C3%ADn-ju%C3%A1rez-b712592b8/"
+      class="card__link linkedin"
+    ></a>
+    <a href="https://x.com/benjajuarez_2" class="card__link twitter"></a>
+    <a
+      href="https://www.instagram.com/benjajuarez1_/?hl=es"
+      class="card__link instagram"
+    ></a>
+  </div>
+</article>
 ```
 
 ```js
@@ -94,26 +110,20 @@ document.addEventListener("DOMContentLoaded", () => {
   const langBtn = document.getElementById("langBtn");
   langBtn.addEventListener("click", toggleLanguage);
 });
-
-const btnPayment = document.querySelector(".card__button--payment");
-const modalPaymentSuccess = document.querySelector(".payment-success");
-
-btnPayment.addEventListener("click", () => {
-  modalPaymentSuccess.classList.add("payment-success--show");
-  setTimeout(() => {
-    modalPaymentSuccess.classList.remove("payment-success--show");
-  }, 3000);
-});
 ```
 
 ```js
 // data.js
 import {
-  title,
-  description,
-  titlePlan,
-  pricePlan,
-  linkPlan,
+  nameTitle,
+  locationTitle,
+  profesionTitle,
+  linkGithub,
+  linkFrontendMentor,
+  linkLinkedin,
+  linkTwitter,
+  linkInstagram,
+  containerImage,
 } from "../util/const.js";
 
 export function loadData() {
@@ -125,11 +135,21 @@ export function loadData() {
       return response.json();
     })
     .then((data) => {
-      title.textContent = data.orderSummary.title;
-      description.textContent = data.orderSummary.description;
-      titlePlan.textContent = data.orderSummary.annualPlan.title;
-      pricePlan.textContent = data.orderSummary.annualPlan.price;
-      linkPlan.textContent = data.orderSummary.annualPlan.link;
+      const img = document.createElement("img");
+      img.src = data.profileCard.profileImg;
+      img.alt = data.profileCard.name;
+      img.classList.add("card__image--profile");
+
+      containerImage.appendChild(img);
+      nameTitle.textContent = data.profileCard.name;
+      locationTitle.textContent = data.profileCard.location;
+      profesionTitle.innerHTML = '"' + data.profileCard.profesion + '."';
+      linkGithub.textContent = data.profileCard.contactSocial.linkGithub;
+      linkFrontendMentor.textContent =
+        data.profileCard.contactSocial.linkMentor;
+      linkLinkedin.textContent = data.profileCard.contactSocial.linkLinkedin;
+      linkTwitter.textContent = data.profileCard.contactSocial.linkX;
+      linkInstagram.textContent = data.profileCard.contactSocial.linkIG;
     });
 }
 ```

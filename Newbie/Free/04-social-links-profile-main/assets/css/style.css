@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Figtree:ital,wght@0,300..900;1,300..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+  /* COLORES */
+  --Green: hsl(75, 94%, 57%);
+
+  --White: hsl(0, 0%, 100%);
+
+  --Grey-700: hsl(0, 0%, 20%);
+  --Grey-800: hsl(0, 0%, 12%);
+  --Grey-900: hsl(0, 0%, 8%);
+
+  /* FUENTES */
+  --font-1: "Inter";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-1);
+}
+
+body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--Grey-900);
+}
+
+.container {
+  background-color: var(--Grey-800);
+  width: 400px;
+  border-radius: 20px;
+  transition: all 0.5s ease;
+  margin-top: 7rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  .card {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1rem;
+
+    .card__image {
+      width: 100%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .card__image--profile {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+      }
+    }
+
+    .card__content {
+      display: flex;
+      text-align: center;
+      gap: 1.5rem;
+      flex-direction: column;
+
+      .card__content--titles {
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+        .card__content--name {
+          color: var(--White);
+          font-weight: 600;
+          font-size: 1.7rem;
+        }
+        .card__content--location {
+          color: var(--Green);
+          font-size: 1.1rem;
+          font-weight: 600;
+        }
+      }
+      .card__content--profesion {
+        color: var(--White);
+        font-weight: 400;
+        opacity: 70%;
+        font-size: 1rem;
+      }
+
+      .card__content--links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1rem;
+
+        .card__link {
+          background-color: var(--Grey-700);
+          width: 100%;
+          padding: 1rem;
+          border-radius: 10px;
+          color: var(--White);
+          text-decoration: none;
+          font-weight: 700;
+          transition: all 0.5s ease;
+          &:hover {
+            background-color: var(--Green);
+            color: var(--Grey-900);
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background-color: #333;
+  width: 100%;
+  margin-top: 20px;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-top: 2px solid #555;
+
+  p {
+    margin: 10px 0;
+  }
+
+  a {
+    color: #1e90ff;
+    text-decoration: none;
+    font-weight: bold;
+    &:hover {
+      color: #ff6347;
+      text-decoration: underline;
+    }
+  }
+}
+
+.language-switcher {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+}
+
+.language-switcher button {
+  padding: 10px 16px;
+  border: 2px solid var(--Grey-900);
+  background: var(--White);
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  color: var(--Grey-900);
+  transition: all 0.3s ease;
+}
+
+.language-switcher button:hover {
+  background: var(--Grey-700);
+  color: var(--White);
+}
+
+@media (min-width: 800px) {
+  .container {
+    margin-top: 3rem;
+  }
+  footer {
+    width: 40%;
+    margin-top: 3rem;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+  }
+}

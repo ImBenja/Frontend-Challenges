@@ -197,6 +197,8 @@ export function updateContent() {
 - GitHub - [ImBenja](https://github.com/ImBenja)
 - Frontend Mentor - [@ImBenja](https://www.frontendmentor.io/profile/ImBenja)
 - Instagram - [@benjajuarez1\_](https://www.instagram.com/benjajuarez1_/?hl=es)
+- Twitter - [@benjajuarez_2](https://x.com/benjajuarez_2)
+- Linkedin - [Benjamim Juarez](https://www.linkedin.com/in/benjam%C3%ADn-ju%C3%A1rez-b712592b8/)
 
 ## 🙏 Agradecimientos
 

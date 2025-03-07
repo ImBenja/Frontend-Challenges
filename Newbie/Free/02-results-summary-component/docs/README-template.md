@@ -32,11 +32,11 @@ Los usuarios deben poder:
 
 #### Vista de escritorio
 
-![](./design/results/Desktop-Result.png)
+![](../design/results/Desktop-Result.png)
 
 #### Vista móvil
 
-![](./design/results/Mobile-Result.png)
+![](../design/results/Mobile-Result.png)
 
 **Descripción**: Esta son las captura de pantalla de mi solución al desafío **Results Summary Component**. Muestra la vista de escritorio del componente, con un diseño limpio. Muestra la vista de mobile del componente, con un diseño responsive en todos los dispositivos.
 
@@ -124,6 +124,8 @@ En futuros proyectos, me gustaría profundizar en:
 - GitHub - [ImBenja](https://github.com/ImBenja)
 - Frontend Mentor - [@ImBenja](https://www.frontendmentor.io/profile/ImBenja)
 - Instagram - [@benjajuarez1\_](https://www.instagram.com/benjajuarez1_/?hl=es)
+- Twitter - [@benjajuarez_2](https://x.com/benjajuarez_2)
+- Linkedin - [Benjamim Juarez](https://www.linkedin.com/in/benjam%C3%ADn-ju%C3%A1rez-b712592b8/)
 
 ## 🙏 Agradecimientos
 

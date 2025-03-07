@@ -59,6 +59,10 @@
 
 > Los textos se cargan desde los archivos JSON correspondientes (es.json para español y en.json para inglés)
 
+## 🚀 Instalación
+
+Sigue estos sencillos pasos para ejecutar el proyecto en tu entorno local:
+
 1. **Clona este repositorio**:
    Abre tu terminal y ejecuta el siguiente comando:
 
@@ -127,4 +131,10 @@ Puedes ver una demostración en vivo del proyecto **<a href="https://component-n
 </a>
 <a href="https://www.frontendmentor.io/profile/ImBenja">
   <img src="https://img.shields.io/badge/frontend mentor-%23111011.svg?style=for-the-badge&logo=frontendmentor&logoColor=white">
+</a>
+<a href="https://x.com/benjajuarez_2">
+   <img src="https://img.shields.io/badge/X-%23000.svg?style=for-the-badge&logo=X&logoColor=white">
+</a>
+<a href="https://www.linkedin.com/in/benjam%C3%ADn-ju%C3%A1rez-b712592b8/">
+	<img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white">
 </a>
