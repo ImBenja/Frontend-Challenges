@@ -1,0 +1,13 @@
+{
+  "ProfileCard": {
+    "avatarImg": "images/image-victor.jpg",
+    "name": "Victor Crest",
+    "age": "26",
+    "city": "London",
+    "statsProfile": {
+      "followers": "80K",
+      "likes": "803K",
+      "photos": "1.4K"
+    }
+  }
+}

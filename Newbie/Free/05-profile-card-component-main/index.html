@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Frontend Mentor | Profile card component</title>
+  </head>
+  <body>
+    <div class="bg-top"></div>
+    <div class="bg-bottom"></div>
+    <main class="container">
+      <section class="card">
+        <figure class="card__image">
+          <img src="images/bg-pattern-card.svg" alt="bg-pattern-card" />
+        </figure>
+        <article class="card__content">
+          <figure class="card__content--image"></figure>
+          <div class="card__content--nameage">
+            <h1 class="card__content--name"></h1>
+            <span class="card__content--age"></span>
+          </div>
+          <p class="card__content--city"></p>
+          <hr />
+          <section class="card__content--stats">
+            <article class="card__content--info--stats">
+              <h2 class="card__content--info--stats--number followers"></h2>
+              <p class="card__content--info--stats--text followers">
+                Followers
+              </p>
+            </article>
+            <article class="card__content--info--stats">
+              <h2 class="card__content--info--stats--number likes"></h2>
+              <p class="card__content--info--stats--text likes">Likes</p>
+            </article>
+            <article class="card__content--info--stats">
+              <h2 class="card__content--info--stats--number photos"></h2>
+              <p class="card__content--info--stats--text photos">Photos</p>
+            </article>
+          </section>
+        </article>
+      </section>
+    </main>
+    <footer class="attribution">
+      <button id="attribution-btn" class="attribution__menu-btn">
+        <img
+          src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg"
+          alt="Profile"
+        />
+      </button>
+      <ul id="attribution-menu" class="attribution-menu">
+        <li class="attribution-link">
+          <a href="https://github.com/ImBenja">
+            <i class="bi bi-github"></i>
+          </a>
+        </li>
+        <li class="attribution-link">
+          <a
+            href="https://www.linkedin.com/in/benjam%C3%ADn-ju%C3%A1rez-b712592b8/"
+          >
+            <i class="bi bi-linkedin"></i>
+          </a>
+        </li>
+        <li class="attribution-link">
+          <a
+            class="mentor-link"
+            href="https://www.frontendmentor.io/profile/ImBenja"
+          >
+            <svg
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Frontend Mentor</title>
+              <path
+                d="M12.1706 1.2719a.732.732 0 00-.7186.732v13.914a.732.732 0 00.732.732.732.732 0 00.7318-.732V2.004a.732.732 0 00-.7452-.732zm11.0741 4.1685a.7339.7339 0 00-.2764.063L16.686 8.307a.7329.7329 0 000 1.3361l6.2823 2.8134a.7378.7378 0 00.2993.0648.732.732 0 00.2973-1.401l-4.786-2.1443 4.786-2.1366a.7339.7339 0 00.3698-.9664.7339.7339 0 00-.69-.4327zm-22.499 5.032a.7316.7316 0 00-.7223.9149c1.736 6.677 7.7748 11.341 14.6822 11.341a.732.732 0 000-1.464 13.7055 13.7055 0 01-13.266-10.2449.7316.7316 0 00-.6939-.547z"
+              />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </footer>
+    <div class="language-switcher">
+      <button id="langBtn">ES</button>
+    </div>
+    <script src="assets/js/main.js" type="module"></script>
+  </body>
+</html>

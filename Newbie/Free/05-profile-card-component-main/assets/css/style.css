@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Figtree:ital,wght@0,300..900;1,300..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kumbh+Sans:wght@100..900&family=Outfit:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+  /* COLORES */
+
+  /* PRIMARY */
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+
+  /* NEUTRAL */
+  --Dark-gray: hsl(0, 0%, 59%);
+
+  /* FUENTES */
+  --font-family: "Kumbh Sans";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+body {
+  background-color: var(--Dark-cyan);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative; /* Necesario para el posicionamiento absoluto de los fondos */
+  overflow: hidden; /* Para asegurar que los fondos no causen scroll */
+
+  .bg-top {
+    position: absolute;
+    background: url(../../images/bg-pattern-top.svg) no-repeat;
+    top: -45%;
+    left: -50%;
+    width: 100vw;
+    height: 100vh;
+    background-size: contain;
+    background-position: center;
+    z-index: -1;
+  }
+
+  .bg-bottom {
+    position: absolute;
+    bottom: -60%;
+    right: -50%;
+    width: 100vw;
+    height: 100vh;
+    background: url(../../images/bg-pattern-bottom.svg) no-repeat;
+    background-size: contain;
+    z-index: -1;
+  }
+}
+
+.container {
+  width: 420px;
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  margin-top: 12rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  .card {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 1rem;
+
+    .card__image {
+      width: 100%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: url(../../images/bg-pattern-card.svg) no-repeat center center;
+      background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+    }
+
+    .card__content {
+      display: flex;
+      text-align: center;
+      gap: 1rem;
+      flex-direction: column;
+
+      .card__content--image {
+        margin-top: -80px; /* Ajusta la posición vertical */
+        z-index: 1000;
+        img {
+          width: 130px;
+          height: 130px;
+          border-radius: 50%;
+          border: 10px solid #fff;
+        }
+      }
+
+      .card__content--nameage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+
+        .card__content--name {
+          color: var(--Very-dark-desaturated-blue);
+          font-weight: 700;
+          font-size: 1.5rem;
+        }
+
+        .card__content--age {
+          color: var(--Dark-grayish-blue);
+          font-weight: 400;
+          font-size: 1.5rem;
+        }
+      }
+
+      .card__content--city {
+        color: var(--Dark-grayish-blue);
+        font-weight: 400;
+        font-size: 1.2rem;
+      }
+
+      hr {
+        border: none;
+        height: 1px;
+        background-color: #ddd;
+        margin-top: 1.5rem;
+      }
+
+      .card__content--stats {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 2rem;
+        gap: 2rem;
+
+        .card__content--info--stats {
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+
+          .card__content--info--stats--number {
+            color: var(--Very-dark-desaturated-blue);
+            font-weight: 700;
+            font-size: 1.5rem;
+          }
+
+          .card__content--info--stats--text {
+            color: var(--Dark-grayish-blue);
+            font-weight: 400;
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.attribution {
+  position: fixed; /* Fija el contenedor en la pantalla */
+  bottom: 10px; /* Posición inicial del botón */
+  right: 43%; /* Posición inicial del botón */
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+.attribution__menu-btn {
+  position: relative; /* El botón es el punto de referencia para el menú */
+  border-radius: 50%;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+}
+
+.attribution-menu {
+  position: absolute; /* Posición absoluta respecto al botón */
+  bottom: 180%; /* Coloca el menú arriba del botón */
+  right: 45px;
+  transform: scale(0);
+  opacity: 0;
+  visibility: hidden;
+  background-color: var(--Very-dark-desaturated-blue);
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out,
+    visibility 0.5s ease-in-out;
+}
+
+.attribution-menu--active {
+  transform: scale(1);
+  opacity: 1;
+  visibility: visible;
+}
+
+.attribution-menu li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  transition: transform 0.5s ease-in-out;
+  transform-origin: 18px 78px;
+  background: #181818;
+
+  a,
+  .mentor-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #e7e7e7;
+    font-size: 1.2rem;
+  }
+  .mentor-link {
+    fill: #e7e7e7;
+    padding: 0.325rem;
+  }
+}
+
+.attribution-menu li:nth-child(1) {
+  transform: rotate(-45deg) translateY(0px);
+}
+
+.attribution-menu li:nth-child(2) {
+  transform: rotate(45deg) translateY(0px);
+}
+
+.language-switcher {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+}
+
+.language-switcher button {
+  padding: 10px 16px;
+  border: 2px solid var(--Dark-grayish-blue);
+  background: var(--Dark-grayish-blue);
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.language-switcher button:hover {
+  background: var(--Dark-gray);
+  color: white;
+}
+
+@media (min-width: 800px) {
+  body {
+    .bg-top {
+      top: -40%;
+      left: -35%;
+    }
+    .bg-bottom {
+      bottom: -45%;
+      right: -58%;
+    }
+  }
+
+  .container {
+    margin-top: 7rem;
+  }
+
+  .attribution {
+    right: 48%;
+  }
+}
