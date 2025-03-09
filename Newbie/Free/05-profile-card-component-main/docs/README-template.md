@@ -66,9 +66,7 @@ Los usuarios deben poder:
 
 2. _Manipulación del DOM: Aprendi a manipular el DOM para cargar los datos dinámicos desde un archivo JSON._
 
-3. _Proceso De Pedido: Aprendi a crear un proceso de pedido con un modal._
-
-4. _Cambio de idioma: aprendi a altenar el idioma al hacer click en un boton._
+3. _Cambio de idioma: aprendi a altenar el idioma al hacer click en un boton._
 
 ```html
 <figure class="card__content--image"></figure>

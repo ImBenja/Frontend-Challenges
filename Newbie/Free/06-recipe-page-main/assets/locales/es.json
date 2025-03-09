@@ -1,0 +1,52 @@
+{
+  "title": "Receta de tortilla sencilla",
+  "description": "Un plato fácil y rápido, perfecto para cualquier comida. Esta tortilla clásica combina huevos batidos y cocinados a la perfección, y se puede rellenar con el queso, las verduras o la carne que prefieras.",
+  "preparation_time": {
+    "total": "Aproximadamente 10 minutos",
+    "preparation": "5 minutos",
+    "cooking": "5 minutos"
+  },
+  "ingredients": [
+    "2-3 huevos grandes",
+    "Sal al gusto",
+    "Pimienta al gusto",
+    "1 cucharada de mantequilla o aceite",
+    "Rellenos opcionales: queso, verduras cortadas en cubitos, carnes cocidas, hierbas."
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "title": "Batir los huevos",
+      "description": "En un bol batir los huevos con una pizca de sal y pimienta hasta que estén bien mezclados. Se puede añadir una cucharada de agua o leche para que quede más esponjoso."
+    },
+    {
+      "step": 2,
+      "title": "Calienta la sartén",
+      "description": " Coloca una sartén antiadherente a fuego medio y agrega mantequilla o aceite."
+    },
+    {
+      "step": 3,
+      "title": "Cocina la tortilla",
+      "description": "Una vez que la mantequilla se haya derretido y esté hirviendo, vierte los huevos. Inclina la sartén para asegurarte de que los huevos cubran la superficie de manera uniforme."
+    },
+    {
+      "step": 4,
+      "title": "Agregue rellenos (opcional)",
+      "description": "Cuando los huevos comiencen a cuajar en los bordes pero aún estén ligeramente líquidos en el medio, espolvoree el relleno elegido sobre la mitad de la tortilla."
+    },
+    {
+      "step": 5,
+      "title": "Doblar y servir",
+      "description": "Mientras la tortilla se sigue cocinando, levantar con cuidado un borde y doblarlo sobre el relleno. Dejar cocinar durante otro minuto y luego deslizarla sobre un plato."
+    },
+    {
+      "step": 6,
+      "title": "Disfrutar",
+      "description": "Servir caliente, con sal y pimienta adicional si es necesario."
+    }
+  ],
+  "titleNutritional": "Nutricion",
+  "descriptionNutritional": "La siguiente tabla muestra los valores nutricionales por porción sin los rellenos adicionales.",
+  "footerLinks": "Desafio por <a href='https://www.frontendmentor.io/profile/ImBenja'>Frontend Mentor</a>. Perfil de <a href='https://github.com/ImBenja'>Github</a>.",
+  "footerSaludo": "¡Gracias por visitar mi proyecto! ¡Sigue aprendiendo y creando!🚀"
+}
