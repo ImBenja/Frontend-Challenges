@@ -1,6 +1,6 @@
 # Frontend Mentor - Recipe page solution
 
-> Esta es mi solución al desafío Profile card component solution de Frontend Mentor. Los desafíos de Frontend Mentor te ayudan a mejorar tus habilidades de codificación mediante la construcción de proyectos realistas.
+> Esta es mi solución al desafío Recipe page component solution de Frontend Mentor. Los desafíos de Frontend Mentor te ayudan a mejorar tus habilidades de codificación mediante la construcción de proyectos realistas.
 
 ## 📚 Tabla de contenidos
 

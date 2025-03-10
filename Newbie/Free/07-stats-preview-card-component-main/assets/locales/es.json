@@ -1,0 +1,22 @@
+{
+  "previewStats": {
+    "title": "Obtenga [información] que ayude a que su negocio crezca.",
+    "description": "Descubra los beneficios del análisis de datos y tome mejores decisiones con respecto a los ingresos, la experiencia del cliente y la eficiencia general.",
+    "stats": {
+      "companies": {
+        "title": "10k+",
+        "description": "empresas"
+      },
+      "template": {
+        "title": "314",
+        "description": "plantillas"
+      },
+      "queries": {
+        "title": "12M+",
+        "description": "consultas"
+      }
+    }
+  },
+  "footerLinks": "Desafio por <a href='https://www.frontendmentor.io/profile/ImBenja'>Frontend Mentor</a>. Perfil de <a href='https://github.com/ImBenja'>Github</a>.",
+  "footerSaludo": "¡Gracias por visitar mi proyecto! ¡Sigue aprendiendo y creando!🚀"
+}

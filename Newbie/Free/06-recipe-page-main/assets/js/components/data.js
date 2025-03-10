@@ -43,9 +43,9 @@ export function loadData() {
         </tr>
         <tr>
           <td>${data.nutrition.calories}</td>
-          <td>${data.nutrition.carbs}</td>
           <td>${data.nutrition.protein}</td>
           <td>${data.nutrition.fat}</td>
+          <td>${data.nutrition.carbs}</td>
         </tr>
       `;
     });

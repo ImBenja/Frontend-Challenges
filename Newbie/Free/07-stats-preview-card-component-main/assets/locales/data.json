@@ -1,0 +1,22 @@
+{
+  "previewStats": {
+    "title": "Get [insights] that help your business grow.",
+    "description": "Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.",
+    "stats": {
+      "companies": {
+        "title": "10k+",
+        "description": "companies"
+      },
+      "template": {
+        "title": "314",
+        "description": "templates"
+      },
+      "queries": {
+        "title": "12M+",
+        "description": "queries"
+      }
+    }
+  },
+  "footerLinks": "Challenge by <a href='https://www.frontendmentor.io/profile/ImBenja'>Frontend Mentor</a>. Profile of <a href='https://github.com/ImBenja'>Github</a>.",
+  "footerSaludo": "Thanks for visiting my project! Keep learning and creating!🚀"
+}
