@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
+
+:root {
+  /*COLORES**/
+
+  /*PRIMARIOS*/
+
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+
+  /*NEUTRALES*/
+
+  --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+  --Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+
+  /*FUENTES*/
+
+  --Big-shoulders: "Big Shoulders Display", cursive;
+  --Lexend: "Lexend Deca", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Very-light-gray-background-headings-buttons);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 70%;
+  height: 70%;
+
+  .card {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+
+    .card__content {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 20px;
+
+      .card__title {
+        font-family: var(--Big-shoulders);
+        font-size: 35px;
+        text-transform: uppercase;
+        color: var(--Very-light-gray-background-headings-buttons);
+      }
+
+      .card__description {
+        font-family: var(--Lexend);
+        font-size: 15px;
+        color: var(--Transparent-white-paragraphs);
+        line-height: 25px;
+      }
+
+      .card__btn {
+        width: 150px;
+        height: 45px;
+        border-radius: 30px;
+        border: none;
+        background-color: var(--Very-light-gray-background-headings-buttons);
+        font-family: var(--Lexend);
+        font-size: 15px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background-color: transparent;
+          border: 2px solid var(--Very-light-gray-background-headings-buttons);
+        }
+      }
+    }
+  }
+  .card.sedans {
+    background-color: var(--Bright-orange);
+    border-radius: 10px 10px 0 0;
+    .card__btn.sedans {
+      color: var(--Bright-orange);
+      &:hover {
+        color: var(--Very-light-gray-background-headings-buttons);
+      }
+    }
+  }
+  .card.suvs {
+    background-color: var(--Dark-cyan);
+    .card__btn.suvs {
+      color: var(--Dark-cyan);
+      &:hover {
+        color: var(--Very-light-gray-background-headings-buttons);
+      }
+    }
+  }
+  .card.luxury {
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0 0 10px 10px;
+    .card__btn.luxury {
+      color: var(--Very-dark-cyan);
+      &:hover {
+        color: var(--Very-light-gray-background-headings-buttons);
+      }
+    }
+  }
+}
+
+footer {
+  background-color: #333;
+  width: 100%;
+  margin-top: 20px;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-top: 2px solid #555;
+  font-family: var(--Lexend);
+
+  p {
+    margin: 10px 0;
+  }
+
+  a {
+    color: #1e90ff;
+    text-decoration: none;
+    font-weight: bold;
+    &:hover {
+      color: #ff6347;
+      text-decoration: underline;
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  .container {
+    margin-top: 2rem;
+    flex-direction: row;
+    width: 80%;
+    height: 80%;
+
+    .card {
+      width: 30%;
+      .card__content {
+        gap: 30px;
+
+        .card__title {
+          font-size: 2.8rem;
+        }
+
+        .card__description {
+          font-size: 16px;
+          width: 23ch;
+        }
+
+        .card__btn {
+          margin-top: 3rem;
+        }
+      }
+    }
+
+    .card.sedans {
+      border-radius: 10px 0 0 10px;
+    }
+
+    .card.luxury {
+      border-radius: 0 10px 10px 0;
+      .card__content {
+        .card__description {
+          width: 22ch;
+        }
+      }
+    }
+  }
+  footer {
+    width: 40%;
+    margin-top: 3rem;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+  }
+}
