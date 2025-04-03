@@ -42,7 +42,7 @@ Los usuarios deben poder:
 
 ### Links
 
-- Solution URL: [**Solucion**](https://github.com/ImBenja/Frontend-Challenges/tree/main/Newbie/Free/09-3-column-preview-card-component-main)
+- Solution URL: [**Solucion**](https://github.com/ImBenja/Frontend-Challenges/tree/main/Newbie/Free/10-huddle-landing-page)
 - Live Site URL: [**Sitio en Vivo**](https://huddle-landing-page-information.netlify.app/)
 
 ## 🛠️ Mi proceso

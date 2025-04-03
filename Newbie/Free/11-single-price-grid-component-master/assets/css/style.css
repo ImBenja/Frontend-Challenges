@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Kumbh+Sans:wght@100..900&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Young+Serif&display=swap");
+
+:root {
+  /* COLORES */
+
+  /* PRIMARIOS */
+
+  --Cyan: hsl(179, 62%, 43%);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+
+  /*NEUTRALES*/
+
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+
+  /* FONTS */
+  --Font-1: "Karla", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Light-Gray);
+  font-family: var(--Font-1);
+  font-size: 16px;
+  width: 100%;
+  height: 100vh;
+}
+
+.container {
+  display: grid;
+  place-content: center;
+  width: 100%;
+  height: 100vh;
+
+  .container__card {
+    width: 350px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    h1 {
+      color: var(--Light-Gray);
+      font-size: 1.2rem;
+    }
+  }
+  .container__card.join {
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    grid-column: 1 / 1;
+    h1 {
+      color: var(--Cyan);
+    }
+    .join__subtitle {
+      color: var(--Bright-Yellow);
+      font-size: 1rem;
+    }
+    .join__text {
+      color: var(--Grayish-Blue);
+      font-size: 0.9rem;
+      line-height: 1.7rem;
+    }
+  }
+  .container__card.subscription {
+    background-color: var(--Cyan);
+
+    .subscription__price {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .subscription__price--number {
+        color: white;
+        font-size: 2rem;
+        font-weight: 700;
+      }
+      .subscription__price--text {
+        color: hsl(216, 5%, 81%);
+        font-size: 1rem;
+        font-weight: 400;
+      }
+    }
+    .subscription__text {
+      color: white;
+      font-size: 1rem;
+      font-weight: 400;
+    }
+    .subscription__btn {
+      background-color: var(--Bright-Yellow);
+      color: white;
+      border: none;
+      width: 100%;
+      height: 50px;
+      border-radius: 5px;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        background-color: hsl(71, 73%, 44%);
+      }
+    }
+  }
+  .container__card.why-us {
+    background-color: hsl(179, 64%, 57%);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    .why-us__list {
+      list-style: none;
+
+      li {
+        color: hsl(210, 5%, 91%);
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5rem;
+      }
+    }
+  }
+}
+
+footer {
+  background-color: #333;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 20px;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-top: 2px solid #555;
+
+  p {
+    margin: 10px 0;
+  }
+
+  a {
+    color: #1e90ff;
+    text-decoration: none;
+    font-weight: bold;
+    &:hover {
+      color: #ff6347;
+      text-decoration: underline;
+    }
+  }
+}
+
+@media (min-width: 950px) {
+  .container {
+    display: grid;
+    place-content: center;
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+
+    .container__card.join {
+      grid-column: 1 / 4;
+      grid-row: 1 / 2;
+      width: 700px;
+      height: 250px;
+      padding: 50px;
+      h1 {
+        font-size: 1.5rem;
+      }
+      .join__subtitle {
+        font-size: 1.2rem;
+      }
+      .join__text {
+        font-size: 1rem;
+        line-height: 1.7rem;
+      }
+    }
+    .container__card.subscription {
+      border-bottom-left-radius: 10px;
+
+      .subscription__price {
+        gap: 10px;
+
+        .subscription__price--number {
+          font-size: 2rem;
+        }
+        .subscription__price--text {
+          font-size: 1.2rem;
+        }
+      }
+      .subscription__text {
+        font-size: 1rem;
+      }
+    }
+    .container__card.why-us {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 10px;
+
+      .why-us__list {
+        li {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+  footer {
+    width: 40%;
+    margin-top: 3rem;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+  }
+}
