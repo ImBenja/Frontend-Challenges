@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Kumbh+Sans:wght@100..900&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Young+Serif&display=swap");
+
+:root {
+  /*COLORES*/
+
+  /*PRIMARIOS*/
+
+  --Orange-500: hsl(25, 97%, 53%);
+
+  /*NEUTRALES*/
+
+  --White: hsl(0, 100%, 100%);
+  --Grey-500: hsl(217, 12%, 63%);
+  --Grey-900: hsl(213, 19%, 18%);
+  --Grey-950: hsl(216, 12%, 8%);
+
+  /*FUENTES*/
+
+  --font-family: "Overpass", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+body {
+  background-color: var(--Grey-950);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  height: 100vh;
+  .container__false {
+    background-color: rgb(137, 22, 22);
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    border-radius: 0.5rem;
+    color: var(--White);
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  .card {
+    width: 370px;
+    height: 400px;
+    background: linear-gradient(380deg, var(--Grey-900) 0%, var(--Grey-950));
+    border-radius: 1rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .card__image {
+      width: 3rem;
+      height: 3rem;
+      background-color: rgb(34, 40, 48);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      &:hover {
+        background-color: var(--Orange-500);
+        transform: rotate(360deg);
+        img {
+          filter: brightness(0) saturate(100%) invert(100%) sepia(100%)
+            saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+        }
+      }
+    }
+    .card__title {
+      color: var(--White);
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+    .card__paragraph {
+      color: var(--Grey-500);
+      font-size: 0.9rem;
+      line-height: 1.5rem;
+    }
+    .card__buttons {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .card__button {
+        width: 3rem;
+        height: 3rem;
+        background-color: rgb(47, 52, 61);
+        border-radius: 50%;
+        border: none;
+        color: var(--Grey-500);
+        font-size: 0.9rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        &:hover {
+          background-color: var(--Orange-500);
+          color: var(--White);
+        }
+      }
+      .card__button--selected {
+        background-color: var(--White);
+        color: var(--Grey-950);
+      }
+    }
+    .card__submit {
+      width: 100%;
+      height: 3rem;
+      background-color: var(--Orange-500);
+      border: none;
+      border-radius: 1.5rem;
+      color: var(--Grey-950);
+      text-transform: uppercase;
+      font-size: 1rem;
+      letter-spacing: 0.2rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      &:hover {
+        background-color: var(--White);
+        color: var(--Grey-950);
+      }
+    }
+  }
+  .card--hidden {
+    text-align: center;
+    height: 400px;
+    .card__paragraph--selected {
+      background-color: rgb(47, 52, 61);
+      color: var(--Orange-500);
+      padding: 0.5rem 1rem;
+      border-radius: 1.5rem;
+      font-size: 1rem;
+      width: 250px;
+      margin: 0 auto;
+      margin-bottom: 1rem;
+    }
+    .card__submit.again {
+      background: linear-gradient(
+        380deg,
+        var(--Orange-500) 0%,
+        var(--Grey-950) 70%
+      );
+      border-radius: 0.5rem;
+      color: var(--White);
+      letter-spacing: 0.1rem;
+      font-weight: 400;
+      font-size: 1.2rem;
+      transition: background 0.3s ease;
+      &:hover {
+        background: linear-gradient(
+          380deg,
+          var(--Grey-500) 0%,
+          var(--Grey-950) 70%
+        );
+        color: var(--White);
+      }
+    }
+  }
+  .hidden {
+    display: none;
+  }
+}
+
+@media (min-width: 900px) {
+  .container__false {
+    width: 20%;
+  }
+}
