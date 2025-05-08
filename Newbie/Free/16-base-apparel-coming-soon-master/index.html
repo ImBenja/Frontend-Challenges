@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+  </head>
+  <body>
+    <div class="container-submit">
+      <h1>Thanks for subscribing!</h1>
+      <p>
+        A confirmation email has been sent to
+        <span class="text-email-submit"></span>. Please open it and click the
+        button inside to confirm your subscription.
+      </p>
+    </div>
+    <header>
+      <figure class="logo">
+        <img src="images/logo.svg" alt="logo" />
+      </figure>
+    </header>
+    <main>
+      <section class="hero">
+        <figure class="hero__image">
+          <img src="images/hero-mobile.jpg" alt="hero-mobile" />
+        </figure>
+        <article class="hero__text">
+          <h1 class="hero__title"><span>We're</span> coming soon</h1>
+          <p class="hero__paragraph">
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
+          <form
+            class="hero__form"
+            action="https://formspree.io/f/mgvkylek"
+            method="post"
+          >
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email Address"
+              aria-describedby="email-error"
+              aria-invalid="false"
+            />
+            <figure class="error-icon" id="error-icon">
+              <img src="images/icon-error.svg" alt="icon-error" />
+            </figure>
+            <button type="submit" class="hero__button">
+              <img src="images/icon-arrow.svg" alt="icon-arrow" />
+            </button>
+            <p class="error-text" id="error-text">
+              Please provide a valid email
+            </p>
+          </form>
+        </article>
+        <figure class="hero__image-desktop">
+          <img src="images/hero-desktop.jpg" alt="hero-desktop" />
+        </figure>
+      </section>
+    </main>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
