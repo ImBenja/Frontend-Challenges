@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Frontend Mentor | Ping coming soon page</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="container-sucess">
+        <h1>Thanks for subscribing!</h1>
+        <p>
+          A confirmation email has been sent to
+          <span class="text-email-submit"></span>.
+        </p>
+      </section>
+      <header>
+        <figure class="logo">
+          <img
+            src="images/logo.svg"
+            alt="Company Logo"
+            width="150"
+            height="40"
+            loading="lazy"
+          />
+        </figure>
+      </header>
+      <main>
+        <article class="announcement">
+          <h1 class="title">
+            We are launching <span class="highlight">soon!</span>
+          </h1>
+          <p class="subtitle">Subscribe and get notified</p>
+          <form class="subscription-form" action="#" method="post" novalidate>
+            <div class="form-group">
+              <label for="email" class="visually-hidden">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Your email address"
+                  required
+                  aria-required="true"
+                />
+              </label>
+              <span class="error-message" aria-live="polite"></span>
+            </div>
+            <button type="submit" class="submit-btn">Notify Me</button>
+          </form>
+        </article>
+        <figure class="hero-image">
+          <img
+            src="images/illustration-dashboard.png"
+            alt="Product dashboard preview"
+            width="640"
+            height="480"
+            loading="lazy"
+            class="responsive-img"
+          />
+        </figure>
+      </main>
+      <footer class="footer">
+        <section class="social-links">
+          <a
+            href="https://www.instagram.com/benjajuarez1_/?hl=es"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+          >
+            <span class="fab fa-instagram" aria-hidden="true"></span>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/benjamín-juárez-b712592b8/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
+            <span class="fab fa-linkedin" aria-hidden="true"></span>
+          </a>
+          <a
+            href="https://x.com/benjajuarez_2"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Twitter"
+          >
+            <span class="fab fa-x-twitter" aria-hidden="true"></span>
+          </a>
+          <a
+            href="https://github.com/ImBenja"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+          >
+            <span class="fab fa-github" aria-hidden="true"></span>
+          </a>
+        </section>
+        <p class="copyright">
+          &copy; <time datetime="2023">2023</time> Copyright Ping. All rights
+          reserved.
+        </p>
+      </footer>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/19bf256644.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
