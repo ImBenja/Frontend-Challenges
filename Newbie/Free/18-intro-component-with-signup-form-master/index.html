@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Frontend Mentor | Intro component with sign up form</title>
+  </head>
+  <body>
+    <main class="main">
+      <section class="left">
+        <h1>Learn to code by watching others</h1>
+        <p>
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </section>
+      <section class="container__form">
+        <article class="form__header">
+          <p><strong>Try it free 7 days</strong> then $20/mo. thereafter</p>
+        </article>
+        <form action="#" method="post" class="form">
+          <article class="form__group">
+            <input
+              type="text"
+              name="nombre"
+              id="firstname"
+              placeholder="First Name"
+              minlength="3"
+              maxlength="30"
+              pattern="^[A-Za-zÁÉÍÓÚáéíóúñÑ ]+$"
+            />
+            <img src="images/icon-error.svg" alt="error" />
+            <p class="error__message name"></p>
+          </article>
+          <article class="form__group">
+            <input
+              type="text"
+              name="apellido"
+              id="lastname"
+              placeholder="Last Name"
+              minlength="3"
+              maxlength="30"
+              pattern="^[A-Za-zÁÉÍÓÚáéíóúñÑ ]+$"
+            />
+            <img src="images/icon-error.svg" alt="error" />
+            <p class="error__message lastname"></p>
+          </article>
+          <article class="form__group">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email Address"
+            />
+            <img src="images/icon-error.svg" alt="error" />
+            <p class="error__message email"></p>
+          </article>
+          <article class="form__group">
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+              minlength="8"
+            />
+            <span class="toggle-password" id="toggle-password">👁️</span>
+            <img src="images/icon-error.svg" alt="error" />
+            <p class="error__message password">Password cannot be empty</p>
+          </article>
+          <article class="form__group terms">
+            <div class="cont">
+              <input type="checkbox" name="terms" id="terms" />
+              <label for="terms"
+                >Acepto los <a href="#">términos y condiciones</a></label
+              >
+            </div>
+            <p class="error__message terms">
+              Debes aceptar los términos y condiciones
+            </p>
+          </article>
+          <button type="submit" class="submit-btn">
+            Claim your free trial
+          </button>
+
+          <section class="social-links">
+            <a
+              href="https://www.instagram.com/benjajuarez1_/?hl=es"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <span class="fab fa-instagram" aria-hidden="true"></span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/benjamín-juárez-b712592b8/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <span class="fab fa-linkedin" aria-hidden="true"></span>
+            </a>
+            <a
+              href="https://x.com/benjajuarez_2"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitter"
+            >
+              <span class="fab fa-x-twitter" aria-hidden="true"></span>
+            </a>
+            <a
+              href="https://github.com/ImBenja"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+            >
+              <span class="fab fa-github" aria-hidden="true"></span>
+            </a>
+          </section>
+        </form>
+      </section>
+    </main>
+    <section class="container">
+      <div id="success-msg" class="container-sucess">
+        <img class="icon-success" src="assets/images/icon-success.svg" alt="" />
+        <h2 class="heading">
+          Thanks <span id="name-span"></span> for subscribing!
+        </h2>
+        <p class="paragraph">
+          A confirmation email has been sent to
+          <span id="email-span" class="email-span"></span>. Please open it and
+          click the button inside to confirm your subscription.
+        </p>
+        <button id="successBtn" class="btn btn-success">Dismiss message</button>
+      </div>
+    </section>
+    <script src="assets/js/main.js"></script>
+    <script
+      src="https://kit.fontawesome.com/19bf256644.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
