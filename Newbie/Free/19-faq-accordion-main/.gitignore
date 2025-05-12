@@ -1,0 +1,65 @@
+# Evita la subida accidental de archivos de diseño (Sketch, Figma, Adobe XD)
+#####################################################
+## Por favor, no elimines las líneas 5 y 6 - ¡gracias! 🙂 ##
+#####################################################
+*.sketch
+*.fig
+*.xd
+
+# Evita archivos innecesarios del sistema (macOS)
+###############################################
+## Por favor, no elimines la línea 12 - ¡gracias! 🙂 ##
+###############################################
+.DS_Store
+
+# Ignora archivos de configuración de Prettier
+.prettierignore
+
+# Ignora archivos de entorno y dependencias
+.env
+.env.local
+.env.development
+.env.production
+node_modules/
+dist/
+build/
+
+# Ignora archivos de logs y temporales
+*.log
+*.tmp
+*.temp
+
+# Ignora archivos de IDE/Editores de texto
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Ignora archivos de sistemas operativos
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Ignora archivos de paquetes y compilación
+*.zip
+*.tar.gz
+*.rar
+*.exe
+
+# Ignora archivos de configuración personalizados
+*.local
+*.bak
+*.backup
+
+# Ignora archivos de testing y cobertura
+coverage/
+*.lcov
+
+# Ignora archivos de Sass/SCSS compilados
+*.css.map
+*.sass.map
+*.scss.map
+
+# Ignora archivos de TypeScript compilados
+*.js.map
+*.d.ts
