@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Frontend Mentor | Notifications page</title>
+  </head>
+  <body>
+    <main>
+      <section class="container">
+        <article class="container__header">
+          <div class="title">
+            <h1>Notifications</h1>
+            <span class="title__number"></span>
+          </div>
+          <button class="mark-read">Mark all as read</button>
+        </article>
+
+        <article class="container__body">
+          <div class="notification unread">
+            <img
+              src="assets/images/avatar-mark-webber.webp"
+              alt="Mark Webber"
+              class="avatar"
+            />
+            <div class="content">
+              <div class="message">
+                <p>
+                  <strong class="name">Mark Webber</strong> reacted to your
+                  recent post
+                  <strong class="post">My first tournament today!</strong>
+                  <span class="unread-dot"></span>
+                </p>
+                <p class="time">1m ago</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="notification unread">
+            <img
+              src="assets/images/avatar-angela-gray.webp"
+              alt="Angela Gray"
+              class="avatar"
+            />
+            <div class="content">
+              <div class="message">
+                <p>
+                  <strong class="name">Angela Gray</strong> followed you
+                  <span class="unread-dot"></span>
+                </p>
+                <p class="time">5m ago</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="notification unread">
+            <img
+              src="assets/images/avatar-jacob-thompson.webp"
+              alt="Jacob Thompson"
+              class="avatar"
+            />
+            <div class="content">
+              <div class="message">
+                <p>
+                  <strong class="name">Jacob Thompson</strong> has joined your
+                  group
+                  <strong class="group">Chess Club</strong>
+                  <span class="unread-dot"></span>
+                </p>
+                <p class="time">1 day ago</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="notification with-message">
+            <img
+              src="assets/images/avatar-rizky-hasanuddin.webp"
+              alt="Rizky Hasanuddin"
+              class="avatar"
+            />
+            <div class="content">
+              <div class="message">
+                <p>
+                  <strong class="name">Rizky Hasanuddin</strong> sent you a
+                  private message
+                </p>
+                <p class="time">5 days ago</p>
+              </div>
+              <div class="private-message">
+                Hello, thanks for setting up the Chess Club. I've been a member
+                for a few weeks now and I'm already having lots of fun and
+                improving my game.
+              </div>
+            </div>
+          </div>
+
+          <div class="notification with-picture">
+            <img
+              src="assets/images/avatar-kimberly-smith.webp"
+              alt="Kimberly Smith"
+              class="avatar"
+            />
+            <div class="content">
+              <div class="message">
+                <p>
+                  <strong class="name">Kimberly Smith</strong> commented on your
+                  picture
+                </p>
+                <p class="time">1 week ago</p>
+              </div>
+            </div>
+            <img
+              src="assets/images/image-chess.webp"
+              alt="Chess"
+              class="notification-picture"
+            />
+          </div>
+
+          <div class="notification">
+            <img
+              src="assets/images/avatar-nathan-peterson.webp"
+              alt="Nathan Peterson"
+              class="avatar"
+            />
+            <div class="content">
+              <div class="message">
+                <p>
+                  <strong class="name">Nathan Peterson</strong> reacted to your
+                  recent post
+                  <strong class="post"
+                    >5 end-game strategies to increase your win rate</strong
+                  >
+                </p>
+                <p class="time">2 weeks ago</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="notification">
+            <img
+              src="assets/images/avatar-anna-kim.webp"
+              alt="Anna Kim"
+              class="avatar"
+            />
+            <div class="content">
+              <div class="message">
+                <p>
+                  <strong class="name">Anna Kim</strong> left the group
+                  <strong class="group">Chess Club</strong>
+                </p>
+                <p class="time">2 weeks ago</p>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="container__footer">
+          <section class="social-links">
+            <a
+              href="https://www.instagram.com/benjajuarez1_/?hl=es"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <span class="fab fa-instagram" aria-hidden="true"></span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/benjamín-juárez-b712592b8/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <span class="fab fa-linkedin" aria-hidden="true"></span>
+            </a>
+            <a
+              href="https://x.com/benjajuarez_2"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitter"
+            >
+              <span class="fab fa-x-twitter" aria-hidden="true"></span>
+            </a>
+            <a
+              href="https://github.com/ImBenja"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+            >
+              <span class="fab fa-github" aria-hidden="true"></span>
+            </a>
+          </section>
+        </article>
+      </section>
+    </main>
+    <script src="assets/js/main.js"></script>
+    <script
+      src="https://kit.fontawesome.com/19bf256644.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

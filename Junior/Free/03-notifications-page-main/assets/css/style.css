@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+
+:root {
+  /* Primary Colors */
+  --red: hsl(1, 90%, 64%);
+  --blue: hsl(219, 85%, 26%);
+
+  /* Neutral Colors */
+  --white: hsl(0, 0%, 100%);
+  --very-light-grayish-blue: hsl(210, 60%, 98%);
+  --light-grayish-blue-1: hsl(211, 68%, 94%);
+  --light-grayish-blue-2: hsl(205, 33%, 90%);
+  --grayish-blue: hsl(219, 14%, 63%);
+  --dark-grayish-blue: hsl(219, 12%, 42%);
+  --very-dark-blue: hsl(224, 21%, 14%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: var(--very-light-grayish-blue);
+  color: var(--dark-grayish-blue);
+  line-height: 1.5;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 100%;
+  max-width: 730px;
+}
+
+.container {
+  background-color: var(--white);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.container__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.title h1 {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--very-dark-blue);
+}
+
+.title__number {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 3px 12px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.mark-read {
+  background: none;
+  border: none;
+  color: var(--dark-grayish-blue);
+  font-size: 16px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.mark-read:hover {
+  color: var(--blue);
+}
+
+.container__body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.notification {
+  display: flex;
+  gap: 15px;
+  padding: 18px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.notification.unread {
+  background-color: var(--very-light-grayish-blue);
+}
+
+.notification:hover {
+  background-color: var(--light-grayish-blue-1);
+  cursor: pointer;
+}
+
+.avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.content {
+  flex-grow: 1;
+}
+
+.message p {
+  margin-bottom: 3px;
+}
+
+.name {
+  color: var(--very-dark-blue);
+  font-weight: 800;
+  margin-right: 5px;
+}
+
+.name:hover {
+  color: var(--blue);
+}
+
+.post,
+.group {
+  color: var(--dark-grayish-blue);
+  font-weight: 800;
+  margin-left: 5px;
+}
+
+.post:hover,
+.group:hover {
+  color: var(--blue);
+}
+
+.group {
+  color: var(--blue);
+}
+
+.time {
+  color: var(--grayish-blue);
+  font-size: 14px;
+}
+
+.unread-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: var(--red);
+  border-radius: 50%;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+.private-message {
+  border: 1px solid var(--light-grayish-blue-2);
+  border-radius: 5px;
+  padding: 15px;
+  margin-top: 12px;
+  color: var(--dark-grayish-blue);
+  cursor: pointer;
+}
+
+.private-message:hover {
+  background-color: var(--light-grayish-blue-1);
+}
+
+.notification-picture {
+  width: 45px;
+  height: 45px;
+  border-radius: 7px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.container__footer {
+  text-align: center;
+  margin-top: 2rem;
+  .social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    a {
+      width: 45px;
+      height: 45px;
+      border: 1px solid var(--grayish-blue);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--Blue-200);
+      text-decoration: none;
+      transition: all 0.3s ease;
+      &:hover {
+        background-color: var(--red);
+        color: #fff;
+      }
+      span {
+        font-size: 23px;
+      }
+    }
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    padding: 20px;
+    border-radius: 0;
+  }
+
+  .title h1 {
+    font-size: 20px;
+  }
+
+  .title__number,
+  .mark-read {
+    font-size: 14px;
+  }
+
+  .notification {
+    padding: 15px;
+    gap: 12px;
+  }
+
+  .avatar {
+    width: 40px;
+    height: 40px;
+  }
+
+  .notification-picture {
+    width: 40px;
+    height: 40px;
+  }
+}
